@@ -1,0 +1,55 @@
+      .portrait:hover {
+opacity:0;
+      -webkit-filter:brightness(10) blur(5px);
+      filter:brightness(10) blur(5px);
+      -webkit-transition:opacity 2s ease,-webkit-filter 2s ease;
+      transition:opacity 2s ease,-webkit-filter 2s ease;
+      cursor:crosshair
+}
+
+      .floatRight {
+      float:right;
+      margin-right:40px
+      }
+
+      .floatLeft {
+      float:left;
+      margin-left:34px
+      }
+
+      .headerimages {
+      padding-top: 34px;
+      }   
+  
+        .br {
+            display: block;
+            margin-bottom: -.5em;
+        }
+
+      @font-face {
+        font-family: jcfontreg;
+        src: url(assets/fonts/JunicodeCondensed-Regular.otf);
+        font-weight: normal;
+    }
+      .mypara {
+      font-size: 75px;
+      }
+
+body{
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+article {
+    margin: 0;
+}
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: none;
+        text-align: left;
+        margin-bottom: 0px;
+    }
