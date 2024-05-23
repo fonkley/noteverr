@@ -1,20 +1,24 @@
-      .portrait:hover {
-opacity:0;
-      -webkit-filter:brightness(10) blur(5px);
-      filter:brightness(10) blur(5px);
-      -webkit-transition:opacity 2s ease,-webkit-filter 2s ease;
-      transition:opacity 2s ease,-webkit-filter 2s ease;
-      cursor:crosshair
+.portrait {
+  opacity:1;
+  -webkit-transition:opacity 2s ease,-webkit-filter 2s ease;
+  transition:opacity 2s ease,-webkit-filter 2s ease;
+  -webkit-filter:brightness(1.04) blur(0);
+  filter:brightness(1.04) blur(0);
+  cursor:crosshair
+}
+.portrait:hover {
+  opacity:0;
+  -webkit-filter:brightness(10) blur(5px);
+  filter:brightness(10) blur(5px);
+  -webkit-transition:opacity 2s ease,-webkit-filter 2s ease;
+  transition:opacity 2s ease,-webkit-filter 2s ease
+  cursor:crosshair
 }
 
-      .floatRight {
-      float:right;
-      margin-right:40px
-      }
 
       .floatLeft {
       float:left;
-      margin-left:34px
+      margin-left:20px
       }
 
       .headerimages {
@@ -31,9 +35,6 @@ opacity:0;
         src: url(assets/fonts/JunicodeCondensed-Regular.otf);
         font-weight: normal;
     }
-      .mypara {
-      font-size: 75px;
-      }
 
 body{
     min-height: 0;
@@ -44,6 +45,8 @@ article {
     margin: 0;
 }
 
+h1{ font-size:3rem;}
+
     .footer {
         position: fixed;
         left: 0;
@@ -53,3 +56,41 @@ article {
         text-align: left;
         margin-bottom: 0px;
     }
+
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.scroll-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+width: 98%;
+display: flex;
+}
+.scroll-container:-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-container img {
+  padding: 10px;
+}
+
+      .mypara {
+      font-size: 60px;
+      }
+      .mypara2 {
+      font-size: 40px;
+      }
